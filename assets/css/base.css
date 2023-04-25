@@ -1,0 +1,89 @@
+:root {
+  --primary: #021a84;
+  --secondary: #fe4c4c;
+  --dark-primary: #010d42;
+  --background: #f9f9f9;
+  --text: #171717;
+  --gray: #999999;
+  --light-gray: #e5e5e5;
+  --green-text: #156d33;
+  --blue-text: #021a84;
+  --red-text: #e5532a;
+  --green-gradient: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    #2ada66;
+  --purple-gradient: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    #021a84;
+  --red-gradient: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    #e5532a;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  background: #f9f9f9;
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  /* background: #e5e5e5; */
+}
+
+/* Button Header */
+.btn {
+  height: 44px;
+  min-width: 149px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 8px 16px;
+  color: inherit;
+}
+
+.btn--border {
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  color: var(--primary);
+}
+
+.btn--signup {
+  color: #ffffff;
+  background: #021a84;
+}
+
+.btn--signup:hover {
+  background: var(--green-text);
+  border: 1px solid var(--green-text);
+}
+
+.btn--border:hover {
+  background: var(--primary);
+  color: var(--light-gray);
+  transition: linear 0.2s;
+}
+/* Button Header */
+
+.heading {
+  color: var(--dark-primary);
+}
